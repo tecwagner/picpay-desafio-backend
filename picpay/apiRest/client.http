@@ -1,0 +1,45 @@
+POST http://localhost:8080/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Wagner",
+    "lastName": "Oliveira Rodrigues",
+    "document": "12345678515",
+    "balance": 1000,
+    "email": "wagner@gmail.com",
+    "userType": "COMMON",
+    "password": "1234" 
+}
+
+###
+
+POST http://localhost:8080/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Amanda",
+    "lastName": "Oliveira Rodrigues",
+    "document": "12345678510",
+    "balance": 0,
+    "email": "amanda@gmail.com",
+    "userType": "MERCHANT",
+    "password": "1234" 
+}
+
+###
+
+GET http://localhost:8080/users HTTP/1.1
+Content-Type: application/json
+
+{}
+
+###
+
+POST http://localhost:8080/transactions HTTP/1.1
+Content-Type: application/json
+
+{
+    "payerId": 3,
+    "payeeId": 1,
+    "value": 10.00
+}
