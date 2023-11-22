@@ -13,12 +13,14 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
+import lombok.NoArgsConstructor;
 import lombok.Data;
 
 @Data
 @Entity(name="transactions")
 @Table(name="transactions")
 @AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode(of="id")
 
 public class Transaction {
